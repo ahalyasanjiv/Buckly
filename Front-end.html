@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+        <head>
+			<title>Starbucks Order</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+			  -->
+			 <!--access to libraries-->
+			<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+			<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+			<script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+			<link rel="stylesheet" href="background.css">
+			<!-- <script src="buckly.js"></script> -->
+
+        </head>
+        <body>
+			<div data-role="page" id="nameCust">
+				<!-- <div data-role="header">
+					<center><img id="picHolder" src="buckly.gif"></img></center>
+				</div> -->
+				<h2><center>Please write your name</center></p>
+				<form>
+					<input type="text" id="fullname"><br>
+				</form>
+				
+				<select name="select-choice-a" id = "option17" data-native-menu="false">
+					<option>Choose a store location.</option>
+					<option value ="man1">96th & Madison, 1378 Madison Avenue, New York, NY 101280712</option>
+					<option value="man2">Columbus Square @ 100th St, 805 Columbus Avenue, New York, NY 10025</option>
+					<option value="man3">Church Street & Murray, 120 Church Street, New York, NY 100072402</option>
+					<option value = "man4">Chambers and West Broadway, 125 Chambers Street, New York, NY 100071331 </option>
+					<option value = "man5">195 Broadway, 195 Broadway, New York, NY 100073100 </option>
+					<option value = "man6">32 Avenue of the Americas, 32 Avenue of the Americas, New York, NY 10013 </option>
+				</select>
+				<a href="#categoriesPage" data-role="button" id="submit7" data-theme="b">Submit</a>
+			</div>
+			<!--Start of the second page-->
+			<div data-role="page" id="categoriesPage">
+				<!--Buckley Logo-->
+				<div data-role="header">
+				<center><img id= "picHolder" src= "10.png" width = "300" height "50" ></img></center>
+				</div>
+				<!--Starbucks Logo-->
+				<div data-role="content">
+					<center><img id= "picHolder" src= "http://smartwrap.com/wp-content/uploads/2014/05/starbucks-logo.png" width="150" height="150" alt="Smiling" ></img></center>
+				</div>
+				
+				<!--page content-->
+				<ul data-role="listview" id= "categories">
+					<li><a href = "#pagejava">Coffee</a></li>
+					<li><a href = "#teaPage">Tea</a></li>
+					<li><a href = "#bevPage">Other Beverages</a></li>
+					<li><a href = "#foodPage">Food</a></li>
+				</ul>
+				
+				 <div data-role="main" class="ui-content">
+					<center> <a href="#" class="ui-btn ui-btn-inline ui-mini">Go Back</a> </center>
+				</div>
+			</div>			
+			<!--Coffee-->
+		<!--Choose a Coffee-->
+		<div data-role="page" id="pagejava">
+			<div data-role="main" class="ui-content">
+			<h1>Choose your coffee.</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<p>
+				<div id="food">
+				<ul data-role="listview">
+				<li data-name="Plain Coffee"><a href="#regular" >Plain Coffee</a></li>
+				<li data-name="Cappuccino"><a href="#pagetwo">Cappuccino</a></li>
+				</ol>
+				</div>
+				<p><div id=foods>
+				<ul data-role="listview">
+				<li><a href="#america">Americano</a></li>
+				<li><a href="#latte">Latte</a></li>								
+				<li><a href="#pageone">Frappuccino</a></li>				
+				<li><a href="#machsped">Macchiato</a></li>
+				<li><a href="#mochasama">Mocha</a></li>
+				</div></p>
+				</ol>
+			</p>
+				
+		</div>
+	</div>
+	
+	<!--Regular Options-->
+	<div data-role="page" id="regular">
+		<div data-role="main" class="ui-content">
+			<h1>Coffee Options</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+				<select name="select-choice-a" id = "option15" data-native-menu="false">
+				<option>Size</option>
+				<option data-name="Short" value="short">Short</option>
+				<option data-name="Tall" value="tall">Tall</option>
+				<option data-name="Grande" value = "grande">Grande</option>
+				<option data-name="Venti" value = "venti">Venti</option>
+				<option data-name="Trenta" value = "trenta">Trenta</option>
+				<select name="select-choice-a" id= "option16" data-native-menu="false">
+				<option>Milk</option>
+				<option data-name="Nonfat" value="nonfat">Nonfat</option>
+				<option data-name="2%" value="2%">2%</option>
+				<option data-name="Skim" value = "skim">Skim</option>
+				<option data-name="Soy" value = "soy">Soy</option>
+				<option data-name="Whole" value = "whole">Whole</option>
+				<option data-name="Half & Half" value = "half&half">Half & Half</option>
+				<option data-name="No milk" value = "nomilk">No milk</option>
+				</select>
+				<select name="select-choice-a" id = "option4" data-native-menu="false">
+				<option>Roast</option>
+				<option value ="decaf">Decaf</option>
+				<option value="light">Light</option>
+				<option value="blonde">Blonde</option>
+				<option value = "medium">Medium</option>
+				<option value = "dark">Dark</option>
+				<option value = "pikeplace">Pike Place</option>
+				</select>
+		<!--choose syrup type-->
+				<select name="select-choice-a" id = "option5" data-native-menu="false">
+				<option>Syrups</option>
+				<option value ="caramel">Caramel</option>
+				<option value="vanilla">Vanilla</option>
+				<option value="toffeenut">Toffeenut</option>
+				<option value = "classic">Classic(no flavor)</option>
+				<option value = "hazelnut">Hazelnut</option>
+				<option value = "cinamondolce">Cinamon Dolce</option>
+				<option value= "raspberry">Raspberry</option>
+				</select>
+		<!--number of syrup pumps-->
+				<label for="slider-1">Syrup Pumps:</label>
+				<input type="range" name="slider-3" id="slider-3" value="0" min="0" max="10">	
+		<!--number of espresso shots-->
+				<label for="slider-1">Espresso Shots:</label>
+				<input type="range" name="slider-4" id="slider-4" value="0" min="0" max="10">				
+				<a href="#confirmPage" data-role="button" id="submit2" data-theme="b">Confirm Order</a>	
+		</div>
+	</div>
+	<!--Choose Frappuccino-->
+	<div data-role="page" id="pageone">
+		<div data-role="main" class="ui-content">
+			<h1>Frappuccinos:</h1>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<div id="food">
+				<ol data-role="listview">
+				<li data-name="Cafe Espresso"><a href="#pagetwo">Cafe Espresso </a></li>
+				<li data-name="Cafe Vanilla"><a href="#pagetwo">Cafe Vanilla</a></li>
+				<li data-name="Caramel"><a href="#pagetwo">Caramel</a></li>
+				<li data-name="Caramel Ribbon Crunch"><a href="#pagetwo">Caramel Ribbon Crunch</a></li>		
+				<li data-name="Cinnamon Dulce"><a href="#pagetwo">Cinnamon Dulce</a></li>
+				<li data-name="Coffee"><a href="#pagetwo">Coffee</a></li>
+				<li data-name="Double Chocolaty Chip"><a href="#pagetwo">Double Chocolaty Chip</a></li>
+				<li data-name="Espresso"><a href="#pagetwo">Espresso</a></li>
+				<li data-name="Green Tea"><a href="#pagetwo">Green Tea</a></li>
+				<li data-name="Hazelnut"><a href="#pagetwo">Hazelnut</a></li>
+				<li data-name="Java Chip"><a href="#pagetwo">Java Chip</a></li>
+				<li data-name="Mocha"><a href="#pagetwo">Mocha</a></li>
+				<li data-name="Mocha Cookie Crumble"><a href="#pagetwo">Mocha Cookie Crumble</a></li> 
+				<li data-name="Strawberries & Creme"><a href="#pagetwo">Strawberries & Creme</a></li>
+				<li data-name="Tazo Chai"><a href="#pagetwo">Tazo Chai</a></li>		
+				<li data-name="Vanilla Bean"><a href="#pagetwo">Vanilla Bean</a></li>
+				<li data-name="White Chocolate"><a href="#pagetwo">White Chocolate</a></li> 
+				<li data-name="White Chocolate Mocha"><a href="#pagetwo">White Chocolate Mocha</a></li>
+				</ol>  
+			</div>
+		</div>
+	</div> 
+		<div data-role="page" id="pagetwo">
+		<div data-role="main"class="ui-content">
+		<div id="food">
+			<h2>Customize your drink:</h2>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<p><center>Additional shots and syrup pumps are at additional cost</center></p>
+				<select name="select-choice-a" id = "option1" data-native-menu="false">
+				<option>Size</option>
+				<option data-name= "Short" value="short">Short</option>
+				<option data-name= "Tall" value="tall">Tall</option>
+				<option data-name= "Grande" value = "grande">Grande</option>
+				<option data-name= "Venti" value = "venti">Venti</option>
+				<option data-name= "Trenta" value = "trenta">Trenta</option>
+				</select>
+				<select name="select-choice-a" id = "option2" data-native-menu="false">
+				<option>Milk</option>
+				<option data-name= "Nonfat" value="nonfat">Nonfat</option>
+				<option data-name= "2%" value="2%">2%</option>
+				<option data-name= "Skim" value = "skim">Skim</option>
+				<option data-name= "Soy" value = "soy">Soy</option>
+				<option data-name= "Whole" value = "whole">Whole</option>
+				<option data-name= "Half & Half" value = "half&half">Half & Half</option>
+				</select>
+				<select name="select-choice-a" id = "option3" data-native-menu="false">
+				<option>Syrups</option>
+				<option data-name= "Caramel" value ="caramel">Caramel</option>
+				<option data-name= "Vanilla" value="vanilla">Vanilla</option>
+				<option data-name= "Toffeenut" value="toffeenut">Toffeenut</option>
+				<option data-name= "Classic(no flavor)" value = "classic">Classic(no flavor)</option>
+				<option data-name= "Hazelnut" value = "hazelnut">Hazelnut</option>
+				<option data-name= "Cinnamon Dolce" value = "cinnamondolce">Cinnamon Dolce</option>
+				<option data-name= "Raspberry" value= "raspberry">Raspberry</option>
+				</select>
+				<label for="slider-1">Syrup Shots:</label>
+				<input type="range" name="slider-1" id="slider-1" value="0" min="0" max="10">		
+				<label for="slider-1">Number of Espresso Shots:</label>
+				<input type="range" name="slider-2" id="slider-2" value="0" min="0" max="10">
+				<form>
+				Additional Comments: <input type="text" id="add1" name="Additional Comments" value=""><br>
+				</form>
+				<a href="#confirmPage"><button id="submit1">Confirm</button>
+	</div>
+	</div>
+</div>	
+	
+	
+	<!--America-->
+	<div data-role="page" id="america">
+		<div data-role="main" class="ui-content">
+		<div id= food>
+			<h2>Hot or Cold?</h2>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+				<ul data-role="listview">
+				<li data-name="Iced Americano"><a href="#confirmPage">Iced Americano</a></li>
+				<li data-name="Cafe Americano"><a href="#confirmPage">Cafe Americano</a></li>
+				</ul>
+		</div>
+		</div>
+	</div>
+	
+	<!--Latte-->
+	<div data-role="page" id="latte">
+		<div data-role="main" class="ui-content">
+		<div id="food">
+		<h2> Lattes</h2>
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>			
+			<h2> <center>Hot </center> </h2>
+			<ul data-role="listview">
+				<li data-name="Caffe Latte"><a href="#pagetwo">Caffe Latte</a></li>
+				<li data-name="Caramel Flan"><a href="#pagetwo">Caramel Flan</a></li>
+				<li data-name="Cinnamon Dolce"><a href="#pagetwo">Cinnamon Dolce</a></li>
+				<li data-name="Vanilla Latte"><a href="#pagetwo">Vanilla Latte</a></li>
+			</ul>
+			<h2><center>Iced </center></h2>
+			<ul data-role="listview">
+				<li data-name="Iced Caffe Latte"><a href="#pagetwo">Iced Caffe Latte</a></li>
+				<li data-name="Iced Cinamon Dolce"><a href="#pagetwo">Iced Cinamon Dolce</a></li>
+				<li data-name="Iced Vanilla Latte"><a href="#pagetwo">Iced Vanilla Latte</a></li>
+				<li data-name="Iced Vanilla Spice Latte"><a href="#pagetwo">Iced Vanilla Spice Latte</a></li>
+			</ul>
+		</div>
+		</div>
+	</div> 
+	<!--Espresso-->
+	<div data-role="page" id="express">
+		<div data-role="main" class="ui-content">
+			<div id="food">
+			<h2> Espresso Drinks </h2>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<ol data-role="listview">
+			<li data-name="Espresso"><a href="#confirmPage">Espresso</a></li>
+			<li data-name="Espresso Con Panna"><a href="#confirmPage">Espresso Con Panna</a></li>
+			</ol>
+			</div>
+		</div>
+	</div>
+	<!--Macchiato-->
+	<div data-role="page" id="machsped">
+		<div data-role="main" class="ui-content">
+		<div id="food">
+		<h2>Macchiatos</h2>
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<h2> <center> Hot </center></h2>
+			<ul data-role="listview">			
+				<li data-name="Caramel Macchiato"><a href="#pagetwo">Caramel Macchiato</a></li>
+				<li data-name="Espresso Macchiato"><a href="#pagetwo">Espresso Macchiato</a></li>
+				<li data-name="Hazelnut Macchiato"><a href="#pagetwo">Hazelnut Macchiato</a></li>
+				<li data-name="Vanilla Macchiato"><a href="#pagetwo">Vanilla Macchiato</a></li>
+			</ul>
+			<h2> <center> Iced </center></h2>
+			<ul data-role="listview">
+				<li data-name="Iced Caramel Macchiato"><a href="#pagetwo">Iced Caramel Macchiato</a></li>
+				<li data-name="Iced Hazelnut Macchiato"><a href="#pagetwo">Iced Hazelnut Macchiato</a></li>
+				<li data-name="Iced Vanilla Macchiato"><a href="#pagetwo">Iced Vanilla Macchiato</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<!--Mocha-->
+	<div data-role="page" id="mochasama">
+		<div data-role="main" class="ui-content">
+		<div id="food">
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<h2>Mocha</h2>
+			<ul data-role="listview">
+				<li data-name="Caffe Mocha"><a href="#pagetwo">Caffe Mocha</a></li>
+				<li data-name="Salted Caramel Mocha"><a href="#pagetwo">Salted Caramel Mocha</a></li>
+				<li data-name="White Chocolate Mocha</"><a href="pagetwo"> White Chocolate Mocha</a></li>
+				<li data-name="Iced Caffe Mocha"><a href="#pagetwo">Iced Caffe Mocha</a></li>
+				<li data-name="Iced White Chocolate Mocha"><a href="#pagetwo">Iced White Chocolate Mocha</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<!--Confirm Order-->
+	<div data-role="page" id="confirmPage">
+		<div data-role="main" class="ui-content">
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<h3> <span>Please Confirm Your Order</h3>
+			<a href="#payment" data-role="button" data-theme="b">Confirm</a>
+			<script type="text/javascript">
+			tday  =new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+			tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+			function GetClock(){
+				d = new Date();
+				nday   = d.getDay();
+				nmonth = d.getMonth();
+				ndate  = d.getDate();
+				nyear = d.getYear();
+				nhour  = d.getHours();
+				nmin   = d.getMinutes();
+				nsec   = d.getSeconds();
+				if(nyear<1000) nyear=nyear+1900;
+				if(nhour ==  0) {ap = " AM";nhour = 12;} 
+				else if(nhour <= 11) {ap = " AM";} 
+				else if(nhour == 12) {ap = " PM";} 
+				else if(nhour >= 13) {ap = " PM";nhour -= 12;}
+
+				if(nmin <= 9) {nmin = "0" +nmin;}
+				if(nsec <= 9) {nsec = "0" +nsec;}
+
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+				setTimeout("GetClock()", 1000);
+				}
+				window.onload=GetClock;
+			</script>
+		<div id="clockbox"></div>
+		</div>		
+	
+			
+	
+	</div>
+	<!--Types of Tea-->
+	<div data-role="page" id ="teaPage">
+		<div data-role="main" class="ui-content">
+			<h2><center>Teas</center></h2>
+			<ul data-role="listview" id= "teaPage">
+				<li><a href = "#hotPage">Hot Teas</a></li>
+				<li><a href = "#icedPage">Iced Teas</a></li>
+			</ul>
+		</div>
+		<center> <a href="#categoriesPage" class="ui-btn ui-btn-inline ui-mini">Go Back</a> </center>
+	</div>
+	<!--Types of Hot Teas-->
+	<div data-role="page" id="hotPage">
+		<div data-role="main" class="ui-content">
+			<div id="food">
+			<h2><center>Brewed Teas</center></h2>
+				<ul data-role="listview">
+				<li data-name="Awake Brewed Tea"><a href="#teapagetwo">Awake Brewed Tea</a></li>
+				<li data-name="Calm Brewed Tea"><a href="#teapagetwo">Calm Brewed Tea</a></li>
+				<li data-name="China Green Tips Brewed Tea"><a href="#teapagetwo">China Green Tips Brewed Tea</a></li>
+				<li data-name="Earl Grey Brewed Tea"><a href="#teapagetwo">Earl Grey Brewed Tea</a></li>		
+				<li data-name="Passion Brewed Tea"><a href="#teapagetwo">Passion Brewed Tea</a></li>
+				<li data-name="Refresh Brewed Tea"><a href="#teapagetwo">Refresh Brewed Tea</a></li>
+				<li data-name="Zen Brewed Tea"><a href="#teapagetwo">Zen Brewed Tea</a></li>
+				</ul>			
+			<h2><center>Latte</center></h2>
+				<ul data-role="listview">
+					<li data-name="Awake Tea Latte"><a href="#teapagetwo">Awake Tea Latte</a></li>
+					<li data-name="Chai Tea Latte"><a href="#teapagetwo">Chai Tea Latte</a></li>
+					<li data-name="Chocolate Chai Tea Latte"><a href="#teapagetwo">Chocolate Chai Tea Latte</a></li>
+					<li data-name="Earl Grey Tea Latte"><a href="#teapagetwo">Earl Grey Tea Latte</a></li>		
+					<li data-name="Green Tea Latte"><a href="#teapagetwo">Green Tea Latte</a></li>
+					<li data-name="Teavana Oprah Chai Tea Latt"><a href="#teapagetwo">Teavana Oprah Chai Tea Latte</a></li>
+					<li data-name="Vanilla Rooibos Tea Latte"><a href="#teapagetwo">Vanilla Rooibos Tea Latte</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<!--Types of Iced Teas-->
+	<div data-role="page" id= "icedPage">
+		<h2><center>Iced Teas</center></h2>
+		<div data-role="main" class="ui-content">
+			<div id="food">
+			<h1><center>Lattes</center></h1>
+				<ol data-role="listview">
+					<li data-name="Iced Awake Tea Latte"><a href="#teapagetwo">Iced Awake Tea Latte</a></li>
+					<li data-name="Iced Chai Tea Latte"><a href="#teapagetwo">Iced Chai Tea Latte</a></li>
+					<li data-name="Iced Chocolate Chai Tea Latte"><a href="#teapagetwo">Iced Chocolate Chai Tea Latte</a></li>		
+					<li data-name="Iced Green Tea Latte"><a href="#teapagetwo">Iced Green Tea Latte</a></li>		
+				</ol>
+			<h1><center> Teavana </center></h1>
+				<ol data-role="listview">
+					<li data-name="Iced Black Tea"><a href="#teapagetwo">Iced Black Tea</a></li>
+					<li data-name="Iced Black Tea Lemonade"><a href="#teapagetwo">Iced Black Tea Lemonade</a></li>
+					<li data-name="Iced Blackberry Mojito Tea Lemonade"><a href="#teapagetwo">Iced Blackberry Mojito Tea Lemonade</a></li>
+					<li data-name="Iced Green Tea"><a href="#teapagetwo">Iced Green Tea</a></li>		
+					<li data-name="Iced Green Tea Lemonad"><a href="#teapagetwo">Iced Green Tea Lemonade</a></li>
+					<li data-name="Iced Passion Tango Tea"><a href="#teapagetwo">Iced Passion Tango Tea</a></li>
+					<li data-name="Iced Passion Tango Tea Lemonade"><a href="#teapagetwo">Iced Passion Tango Tea Lemonade</a></li>
+					<li data-name="Iced Peach Green Tea"><a href="#teapagetwo">Iced Peach Green Tea</a></li>
+					<li data-name="Iced Peach Green Tea Lemonade"><a href="#teapagetwo">Iced Peach Green Tea Lemonade</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- Tea Preferences -->
+
+		<div data-role="page" id="teapagetwo">
+		<div data-role="main"class="ui-content">
+			<h2>Customize your drink:</h2>
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<p><center>Additional shots and syrup pumps are at additional cost</center></p>
+				<select name="select-choice-a" id = "option6" data-native-menu="false">
+				<option>Size</option>
+				<option data-name="Short" value="short">Short</option>
+				<option data-name="Tall" value="tall">Tall</option>
+				<option data-name="Grande" value = "grande">Grande</option>
+				<option data-name="Venti" value = "venti">Venti</option>
+				<option data-name="Trenta" value = "trenta">Trenta</option>
+				</select>
+				<select name="select-choice-a" id= "option7" data-native-menu="false">
+				<option>Milk</option>
+				<option data-name="Nonfat" value="nonfat">Nonfat</option>
+				<option data-name="2%" value="2%">2%</option>
+				<option data-name="Skim" value = "skim">Skim</option>
+				<option data-name="Soy" value = "soy">Soy</option>
+				<option data-name="Whole" value = "whole">Whole</option>
+				<option data-name="Half & Half" value = "half&half">Half & Half</option>
+				<option data-name="No milk" value = "nomilk">No milk</option>
+				</select>
+				<select name="select-choice-a" id = "option8" data-native-menu="false">
+				<option>Syrups</option>
+				<option data-name="Caramel" value ="caramel">Caramel</option>
+				<option data-name="Vanilla" value="vanilla">Vanilla</option>
+				<option data-name="Toffeenut" value="toffeenut">Toffeenut</option>
+				<option data-name="Classic(no flavor)" value = "classic">Classic(no flavor)</option>
+				<option data-name="Hazelnut" value = "hazelnut">Hazelnut</option>
+				<option data-name="Cinnamon Dolce" value = "cinamondolce">Cinnamon Dolce</option>
+				<option data-name="Raspberry" value= "raspberry">Raspberry</option>
+				</select>
+				<label for="slider-5">Syrup Pumps:</label>
+				<input type="range" name="slider-5" id="slider-5" value="0" min="0" max="10">		
+				<form>
+				Additional Comments: <input type="text" id="add2" name="Additional Comments" value=""><br>
+				</form>
+				<a href="#confirmPage"><button id="submit3">Confirm</button>
+		</div>
+		</div>	
+	<!--Types of Other Beverages-->
+		<!--Other Beverages-->
+		<div data-role="page" id="bevPage">
+		<h1><center>Other Beverages</center></h1>
+		<div data-role="main" class="ui-content">
+		<center> <a href="#" class="ui-btn ui-btn-inline ui-mini" data-rel="back">Go Back</a> </center>
+			<div id="food">	
+<p>			
+			<ul data-role="listview">			
+				<li data-name="Caramel Apple Spice" ><a href="#bevpagethree">Caramel Apple Spice</a></li>
+				<li data-name="Cold Apple Juice"><a href="#bevpagethree">Cold Apple Juice</a></li>
+				<li data-name="Flavored Steamed Milk"><a href="#bevpagetwo">Flavored Steamed Milk</a></li>
+				<li data-name="Steamed Apple Juice"><a href="#bevpagethree">Steamed Apple Juice</a></li>
+			<h2> <center> Chocolate Beverages </center></h2>
+				<li data-name="Hot Chocolate"><a href="#bevpagetwo">Hot Chocolate</a></li>
+				<li data-name="Peppermint Hot Chocolate"><a href="#bevpagetwo">Peppermint Hot Chocolate</a></li>
+				<li data-name="White Hot Chocolate"><a href="#bevpagetwo">White Hot Chocolate</a></li>
+			</ul>
+</p>
+			</div>
+		</div>
+		</div>
+		<!-- Other Beverage Preferences -->
+		<div data-role="page" id="bevpagetwo">
+			<h2>Customize your drink:</h2>
+				<select name="select-choice-a" id = "option9" data-native-menu="false">
+				<option>Size</option>
+				<option data-name= "Short" value="short">Short</option>
+				<option data-name= "Tall" value="tall">Tall</option>
+				<option data-name= "Grande" value = "grande">Grande</option>
+				<option data-name= "Venti" value = "venti">Venti</option>
+				<option data-name= "Trenta" value = "trenta">Trenta</option>
+				</select>
+				<select name="select-choice-a" id = "option10" data-native-menu="false">
+				<option>Milk</option>
+				<option data-name= "Nonfat" value="nonfat">Nonfat</option>
+				<option data-name= "2%" value="2%">2%</option>
+				<option data-name= "Skim" value = "skim">Skim</option>
+				<option data-name= "Soy" value = "soy">Soy</option>
+				<option data-name= "Whole" value = "whole">Whole</option>
+				<option data-name= "Half & Half" value = "half&half">Half & Half</option>
+				<option data-name= "No milk" value = "nomilk">No milk</option>
+				</select>
+				<form>
+				Additional Comments: <input type="text" id="add3" name="Additional Comments" value=""><br>
+				</form>
+				<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+				<a href="#confirmPage"><button id="submit4">Confirm</button>
+	
+			</div>
+		</div>	
+		<!-- Other Beverage Preferences -->
+		<div data-role="page" id="bevpagethree">
+			<h2>Customize your drink:</h2>
+				<select name="select-choice-a" id = "option18" data-native-menu="false">
+				<option>Size</option>
+				<option data-name= "Short" value="short">Short</option>
+				<option data-name= "Tall" value="tall">Tall</option>
+				<option data-name= "Grande" value = "grande">Grande</option>
+				<option data-name= "Venti" value = "venti">Venti</option>
+				<option data-name= "Trenta" value = "trenta">Trenta</option>
+				</select>
+				<form>
+				Additional Comments: <input type="text" id="add10" name="Additional Comments" value=""><br>
+				</form>
+				<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+				<a href="#confirmPage"><button id="submit8">Confirm</button>
+	
+			</div>
+		</div>	
+		<!--Types of Food-->
+		<div data-role="page" id ="foodPage">
+		<div data-role ="header"><h1>Food</h1></div>
+		<div data-role="main" class="ui-content">
+			
+			<ul data-role="listview" id= "foodPage">
+				<p><li><a href = "#bakeryPage">Bakery</a></li></p>
+				<p>
+			</ul>
+			<ul data-role="listview" id= "foodPage">
+				<li><a href = "#hotbreakfastPage">Hot Breakfast</a></li></p>
+			</ul>
+		
+		<center> <a href="#categoriesPage" class="ui-btn ui-btn-inline ui-mini">Go Back</a> </center>
+		</div>
+		</div>
+		
+		
+		<!--Bakery-->
+		
+		<div data-role="page" id = "bakeryPage">
+			
+			<div data-role ="header">
+				<h1>Bakery Goods</h1>
+			</div>
+			
+			<!--Bagels-->
+			<div id="food">
+				<h2>Bagels</h2>
+				<ol data-role="listview">
+				<li data-name= "Everything Bagel"><a href="#bagelinfo">Everything Bagel</a></li>
+				<li data-name= "Everything with Cheese Bagel"><a href="#bagelinfo">Everything with Cheese Bagel</a></li>
+				<li data-name= "Multigrain Bagel"><a href="#bagelinfo">Multigrain Bagel</a></li>		
+				<li data-name= "Plain Bagel"><a href="#bagelinfo">Plain Bagel</a></li>		
+				</ol>
+				
+				
+			<!--Breads-->
+				<h2>Breads</h2>
+					<ol data-role="listview">
+					<li data-name= "Banana Nut Bread"><a href="#confirmPage">Banana Nut Bread</a></li>
+					<li data-name= "Caramel Pecan Sticky Bun"><a href="#confirmPage">Caramel Pecan Sticky Bun</a></li>
+					<li data-name= "Chocolate Croissant"><a href="#croissantpage">Chocolate Croissant</a></li>		
+					<li data-name= "Croissant"><a href="#croissantpage">Croissant</a></li>	
+					<li data-name= "Ham & Cheese Croissant"><a href="#confirmPage">Ham & Cheese Croissant</a></li>
+					<li data-name= "Morning Bun"><a href="#confirmPage">Morning Bun</a></li>
+					<li data-name= "Pumpkin Bread"><a href="#confirmPage">Pumpkin Bread</a></li>		
+					<li data-name= "Sausage Croissant Roll"><a href="#confirmPage">Sausage Croissant Roll</a></li>
+					<li data-name= "Tomato & Cheese Croissant"><a href="#confirmPage">Tomato & Cheese Croissant</a></li>
+					</ol>
+				
+			<!--Cakes-->
+				<h2>Cakes</h2>
+				<ol data-role="listview">
+				<li data-name= "Classic Coffee Cake"><a href="#confirmPage">Classic Coffee Cake</a></li>
+				<li data-name= "Iced Lemon Pound Cake"><a href="#confirmPage">Iced Lemon Pound Cake</a></li>
+				<li data-name= "Raspberry Swirl Pound Cake"><a href="#confirmPage">Raspberry Swirl Pound Cake</a></li>
+				<li data-name= "Reduced fat Berry Coffee Cake"><a href="#confirmPage">Reduced fat Berry Coffee Cake</a></li>	
+				</ol>
+				
+			<!--Cake Pops-->
+				<h2>Cake Pops</h2>
+				<ol data-role="listview">
+				<li data-name= ""><a href="#confirmPage">Birthday Cake Pop</a></li>
+				<li data-name= "Chocolate Cake Pop"><a href="#confirmPage">Chocolate Cake Pop</a></li>
+				<li data-name= "Salted Caramel Cake Pop"><a href="#confirmPage">Salted Caramel Cake Pop</a></li>		
+				</ol>
+				
+			<!--Cookies-->
+				<h2>Cookies</h2>
+				<ol data-role="listview">
+				<li data-name= "Chocolate Chip Cookie"><a href="#confirmPage">Chocolate Chip Cookie</a></li>
+				<li data-name= "Flower Sugar Cookie"><a href="#confirmPage">Flower Sugar Cookie</a></li>
+				<li data-name= "Oatmeal Cookie"><a href="#confirmPage">Oatmeal Cookie</a></li>		
+				</ol>
+				
+			<!--Muffins-->
+				<h2>Muffins</h2>
+				<ol data-role="listview">
+				<li data-name= "Blueberry Yogurt Muffin with Honey"><a href="#confirmPage">Blueberry Yogurt Muffin with Honey</a></li>
+				<li data-name= "Carrot Cake Muffin with Pecans"><a href="#confirmPage">Carrot Cake Muffin with Pecans</a></li>	
+				</ol>
+				
+			<!--Scones-->
+				<h2>Scones</h2>
+				<ol data-role="listview">
+				<li data-name= "Blueberry Scone"><a href="#confirmPage">Blueberry Scone</a></li>
+				<li data-name= "Cranberry Orange Scone"><a href="#confirmPage">Cranberry Orange Scone</a></li>	
+				<li data-name= "Petite Vanilla Bean Scone"><a href="#confirmPage">Petite Vanilla Bean Scone</a></li>	
+				</ol>
+			
+			<!--Other Pastries-->
+				<h2>Other Pastries</h2>
+				<ol data-role="listview">
+				<li data-name= "Cheesecake Brownie"><a href="#confirmPage">Cheesecake Brownie</a></li>
+				<li data-name= "Cheese Danish"><a href="#confirmPage">Cheese Danish</a></li>	
+				<li data-name= "Gluten-Free Marshmallow Dream Bar"><a href="#confirmPage">Gluten-Free Marshmallow Dream Bar</a></li>	
+				<li data-name= "Marshmallow Dream Bar"><a href="#confirmPage">Marshmallow Dream Bar</a></li>
+				<li data-name= "Old Fashioned Glazed Doughnut"><a href="#confirmPage">Old Fashioned Glazed Doughnut</a></li>	
+				<li data-name= "Salted Caramel Square"><a href="#confirmPage">Salted Caramel Square</a></li>
+				</ol>
+			</div>
+		</div>
+						
+			<!--Food Options-->
+			<div data-role="page" id="bagelinfo">
+			<h1>How would you like your bagel?</h1> 
+					<select name="select-choice-a" id = "option11" data-native-menu="false">
+					<option>Spread</option>
+					<option data-name= "Butter" value="Butter">Butter</option>
+					<option data-name= "Cream Cheese" value="Cream Cheese">Cream Cheese</option>
+					<option data-name= "Plain" value = "Plain">Plain</option>
+					</select>
+					<select name="select-choice-a" id = "option12" data-native-menu="false">
+					<option>Toasted?</option>
+					<option data-name= "Toasted" value="Toasted">Toasted</option>
+					<option data-name= "Not Toasted" value="Not Toasted">Not Toasted</option>
+					</select>					
+				 <h4>Additional Comments: <input type="text" id="add4" name="Additional Comments" value=""><br> </h4>
+				</form>
+				
+				<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+				<a href="#confirmPage"><button id="submit5">Confirm</button>
+	
+			</div>
+			
+			<div data-role="page" id="croissantpage">
+			<div data-role="main"class="ui-content">
+			<h1>How would you like your croissant?</h1> 
+				<select name="select-choice-a" id = "option13" data-native-menu="false">
+					<option>Spread</option>
+					<option data-name= "Butter" value="Butter">Butter</option>
+					<option data-name= "Cream Cheese" value="Cream Cheese">Cream Cheese</option>
+					<option data-name= "Plain" value = "Plain">Plain</option>
+					</select>
+				<select name="select-choice-a" id = "option14" data-native-menu="false">
+					<option>Toasted?</option>
+					<option data-name= "Toasted" value="Toasted">Toasted</option>
+					<option data-name= "Not Toasted" value="Not Toasted">Not Toasted</option>
+				</select>
+				 <h4>Additional Comments: <input type="text" id="add5" name="Additional Comments" value=""><br> </h4>
+				</form>
+				
+				<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+				
+				<a href="#confirmPage"><button id="submit6">Confirm</button>
+			
+			</div>
+			</div>
+			
+			
+		
+		
+		<!--Hot Breakfast-->
+	
+		<div data-role="page" id= "hotbreakfastPage">
+			<div id="food">
+			<!-- Oatmeal -->
+			<h2>Oatmeal</h2>
+			<div data-role="main" class="ui-content">						
+				<ol data-role="listview">
+				<li data-name="Classic Whole-Grain Oatmeals"><a href="#confirmPage">Classic Whole-Grain Oatmeal</a></li>
+				<li data-name="Hearty Blueberry Oatmeal"><a href="#confirmPage">Hearty Blueberry Oatmeal</a></li>
+				<li data-name="Hearty Blueberry Whole-Grain Oatmeal"><a href="#confirmPage">Hearty Blueberry Whole-Grain Oatmeal</a></li>		
+				</ol>
+			</div>
+			
+			<!-- Sandwich & Wraps -->
+			<h2>Sandwich & Wraps</h2>
+			<div data-role="main" class="ui-content">						
+				<ol data-role="listview">
+				<li data-name="Bacon & Gouda Breakfast Sandwich"><a href="#confirmPage">Bacon & Gouda Breakfast Sandwich</a></li>
+				<li data-name="Classic Whole-Grain Oatmeal"><a href="#confirmPage">Classic Whole-Grain Oatmeal</a></li>
+				<li data-name="Egg & Cheddar Breakfast Sandwich"><a href="#confirmPage">Egg & Cheddar Breakfast Sandwich</a></li>
+				<li data-name="Reduced-Fat Turkey Bacon Breakfast Sandwich"><a href="#confirmPage">Reduced-Fat Turkey Bacon Breakfast Sandwich</a></li>
+				<li data-name="Sausage & Cheddar Breakfast Sandwich"><a href="#confirmPage">Sausage & Cheddar Breakfast Sandwich</a></li>
+				<li data-name="Slow-Roasted Ham & Swiss Breakfast Sandwich"><a href="#confirmPage">Slow-Roasted Ham & Swiss Breakfast Sandwich</a></li>
+				<li data-name="Spinach & Feta Breakfast Wrap"><a href="#confirmPage">Spinach & Feta Breakfast Wrap</a></li>
+				<li data-name="Vegetable & Fontiago Breakfast Sandwich"><a href="#confirmPage">Vegetable & Fontiago Breakfast Sandwich</a></li>
+				</ol>
+			</div>
+			</div>
+		</div>
+	<!--TREASURE-->
+	
+<!-- PAYMENT-->
+	<div data-role="page" id="payment">
+		<h1>How would you like to pay?</h1> <br><br>
+		
+		<center> <a href="#creditcard"><img src="http://www.leblancandson.com/images/visa_mastercard_logo.gif" alt="creditdebit" width="400" height="100"></a></p> </center> <br><br><br><br><br><br>
+		<center> <a href="#cash"><img src="http://www.clker.com/cliparts/6/7/3/1/1195423113221583198n_kamil_Money_1.svg.hi.png"  alt="cash" width="400" height="100"  ></a></p> </center> <br><br><br><br><br><br>
+		<center> <a href="http://www.paypal.com"> <img src = "http://www.paypalobjects.com/webstatic/mktg/merchant/pages/express-checkout/express-checkout-hero-sg.png" alt="paypal" width="400" height="100"></a></p> 
+		
+		
+	</div>
+	
+<!-- Cash -->
+	<div data-role="page" id="cash"> 
+	 <h1>Thanks for your order. Please bring your receipt to store. </h1> 
+	 <iframe width="600" height="450" frameborder="0" style="border:0"
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=starbucks&key=AIzaSyC_rBuYheWnFuEACGfgYsn5C5OpXicSXhI"></iframe>
+	</div>
+	<button><a href="#receipt"> </a></button>
+
+
+<!-- Card -->
+	
+	<div data-role="page" id="creditcard">
+		<h1> Credit/Debit Card Payment </h1>
+		<form method="post" action="https://www.cryptoheaven.com/ch/web-form.jsp" ENCTYPE="multipart/form-data">
+
+<!-- required parameters CH_uId or CH_toEmail -->
+<input type="hidden" name="CH_uId" value="3487961">
+
+<!-- optional parameters CH_successPage and CH_errorPage -->
+<input type="hidden" name="CH_successPage" value="https://www.yourserver.com/success">
+<input type="hidden" name="CH_errorPage" value="https://www.yourserver.com/error">
+
+<!-- other optional parameters CH_fromName, CH_fromEmail CH_subject -->
+<input type="hidden" name="CH_fromName" value="CryptoHeaven Secure Form">
+<input type="hidden" name="CH_fromEmail" value="my-forms@cryptoheaven.com">
+<input type="hidden" name="CH_subject" value="Your Site Payment Form">
+
+<!-- your regular form follows -->
+<table width=1318 border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr bgcolor="#E5E5E5"> 
+    <td height="22" colspan="3" align="left" valign="middle"><strong>&nbsp;Billing Information (required)</strong></td>
+  </tr>
+  <tr> 
+    <td height="22" width="180" align="right" valign="middle">First Name:</td>
+    <td colspan="2" align="left"><input name="firstName" type="text" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Last Name:</td>
+    <td colspan="2" align="left"><input name="lastName" type="text" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Company (optional):</td>
+    <td colspan="2" align="left"><input name="company" type="text" size="50"></td>
+  </tr> 
+  <tr> 
+    <td height="22" align="right" valign="middle">Street Address:</td>
+    <td colspan="2" align="left"><input name="address1" type="text" value="" size="50"></td>
+  </tr> 
+  <tr> 
+    <td height="22" align="right" valign="middle">Street Address (2):</td>
+    <td colspan="2" align="left"><input name="address2" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">City:</td>
+    <td colspan="2" align="left"><input name="city" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">State/Province:</td>
+    <td colspan="2" align="left"><input name="state" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Zip/Postal Code:</td>
+    <td colspan="2" align="left"><input name="zip" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Country:</td>
+    <td colspan="2" align="left"><input name="country" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Phone:</td>
+    <td colspan="2" align="left"><input name="phone" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#E5E5E5"> 
+    <td height="22" colspan="3" align="left" valign="middle"><strong>&nbsp;Credit Card (required)</strong></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Credit Card Number:</td>
+    <td colspan="2" align="left"><input name="CCNo" type="text" value="" size="19" maxlength="40"></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Expiry Date:</td>
+    <td colspan="2" align="left">
+      <SELECT NAME="CCExpiresMonth" >
+        <OPTION VALUE="" SELECTED>--Month--
+        <OPTION VALUE="01">January (01)
+        <OPTION VALUE="02">February (02)
+        <OPTION VALUE="03">March (03)
+        <OPTION VALUE="04">April (04)
+        <OPTION VALUE="05">May (05)
+        <OPTION VALUE="06">June (06)
+        <OPTION VALUE="07">July (07)
+        <OPTION VALUE="08">August (08)
+        <OPTION VALUE="09">September (09)
+        <OPTION VALUE="10">October (10)
+        <OPTION VALUE="11">November (11)
+        <OPTION VALUE="12">December (12)
+      </SELECT> /
+      <SELECT NAME="CCExpiresYear">
+        <OPTION VALUE="" SELECTED>--Year--
+        <OPTION VALUE="04">2004
+        <OPTION VALUE="05">2005
+        <OPTION VALUE="06">2006
+        <OPTION VALUE="07">2007
+        <OPTION VALUE="08">2008
+        <OPTION VALUE="09">2009
+        <OPTION VALUE="10">2010
+        <OPTION VALUE="11">2011
+        <OPTION VALUE="12">2012
+        <OPTION VALUE="13">2013
+        <OPTION VALUE="14">2014
+        <OPTION VALUE="15">2015
+      </SELECT>
+    </td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#E5E5E5"> 
+    <td height="22" colspan="3" align="left" valign="middle"><strong>&nbsp;Additional Information</strong></td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="middle">Contact Email:</td>
+    <td colspan="6" align="left"><input name="contactEmail" type="text" value="" size="50"></td>
+  </tr>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="22" align="right" valign="top">Special Notes:</td>
+    <td colspan="2" align="left"><textarea name="notes" cols="45" rows="4"></textarea></td>
+  </tr>
+</table>
+<p><input name="Submit" type="submit" value="Send Secure Form &gt;&gt;"></p>
+</form>
+				
+		</div>
+	</div>
+			
+<!--Receipt Page-->
+	<div data-role="page" id="receipt">
+		<div data-role="header">
+			<center><img id= "picHolder" src= "10.png" width = "300" height "50" ></img></center>
+		</div>
+		<div data-role="main" class="ui-content">
+		<h4>Take a screenshot of this digital receipt and show it to your barista</h4>
+		<script type="text/javascript">
+			tday  =new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+			tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+			function GetClock(){
+				d = new Date();
+				nday   = d.getDay();
+				nmonth = d.getMonth();
+				ndate  = d.getDate();
+				nyear = d.getYear();
+				nhour  = d.getHours();
+				nmin   = d.getMinutes();
+				nsec   = d.getSeconds();
+				if(nyear<1000) nyear=nyear+1900;
+				if(nhour ==  0) {ap = " AM";nhour = 12;} 
+				else if(nhour <= 11) {ap = " AM";} 
+				else if(nhour == 12) {ap = " PM";} 
+				else if(nhour >= 13) {ap = " PM";nhour -= 12;}
+
+				if(nmin <= 9) {nmin = "0" +nmin;}
+				if(nsec <= 9) {nsec = "0" +nsec;}
+
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+				setTimeout("GetClock()", 1000);
+				}
+				window.onload=GetClock;
+			</script>
+		<div id="clockbox"></div>
+		</div>
+	</div>
+		
+		
+	<script>
+	var receipt = [];
+	$('#food ol').children('li').bind('touchstart mousedown', function(e) {
+		console.log($(this).attr('data-name'));
+		receipt.push($(this).attr('data-name'));
+		console.log(receipt);
+		
+		
+	});
+	$('#food ul').children('li').bind('touchstart mousedown', function(e) {
+		console.log($(this).attr('data-name'));
+		receipt.push($(this).attr('data-name'));
+		console.log(receipt);
+	});
+	
+	$(document).ready(function () {
+	$("#submit1").click(
+		function () {
+			console.log($( "#option1 option:selected" ).text());
+			console.log($( "#option2 option:selected" ).text());
+			console.log($( "#option3 option:selected" ).text());
+            console.log($("input#slider-1").val());
+			console.log($("input#slider-2").val());
+			console.log($('#add1').val());
+			
+			receipt.push("Size:" + $( "#option1 option:selected" ).text());
+			receipt.push("Milk:" + $( "#option2 option:selected" ).text());
+			receipt.push("Syrup:" + $( "#option1 option:selected" ).text());
+			receipt.push("Syrup Pumps:"+ $("input#slider-1").val());
+			receipt.push("Espresso Shots:" + $("input#slider-2").val());
+			receipt.push("Additional Comments:"+$('#add1').val());
+			console.log(receipt);
+			console.log("hi");
+			console.log(receipt);
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				} 
+		}            
+    );
+    });
+	
+
+	$(document).ready(function () {
+	$("#submit2").click(
+		function () {
+			console.log($( "#option15 option:selected" ).text());
+			console.log($( "#option16 option:selected" ).text());
+			console.log($( "#option4 option:selected" ).text());
+			console.log($( "#option5 option:selected" ).text());
+            console.log($("input#slider-3").val());
+			console.log($("input#slider-4").val());
+            
+			receipt.push("Size:"+$( "#option15 option:selected" ).text());
+			receipt.push("Milk:"+$( "#option16 option:selected" ).text());
+			receipt.push("Roast:"+$( "#option4 option:selected" ).text());
+			receipt.push("Syrup:" +$( "#option5 option:selected" ).text());
+			receipt.push("Syrup Pumps:" +$("input#slider-3").val());
+			receipt.push("Espresso Shots:"+$("input#slider-4").val());
+			
+			console.log(receipt);
+			
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				} 
+		}
+           
+    );
+    });
+	$(document).ready(function () {
+	$("#submit3").click(
+		function () {
+			console.log($("#option6 option:selected" ).text());
+			console.log($("#option7 option:selected" ).text());
+			console.log($( "#option8 option:selected" ).text());
+            console.log($("input#slider-5").val());
+			console.log("Additional Comments"+$('#add2').val());
+              
+			receipt.push("Size:"+ $( "#option6 option:selected" ).text());
+			receipt.push("Milk:"+$( "#option7 option:selected" ).text());
+			receipt.push("Syrup:" +$( "#option8 option:selected" ).text());			
+			receipt.push("Syrup Pumps:" + $("input#slider-5").val());
+			receipt.push("Additional Comments:"+$('#add2').val());
+			
+			console.log(receipt);
+			
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				} 	
+		}            
+    );
+    });
+	$(document).ready(function () {
+	$("#submit4").click(
+		function () {
+			console.log($("#option9 option:selected" ).text());
+			console.log($("#option10 option:selected" ).text());
+			console.log($("#option18 option:selected" ).text());
+			console.log($('#add3').val());
+              
+			receipt.push("Size"+ $( "#option9 option:selected" ).text());
+			receipt.push("Milk"+ $( "#option10 option:selected" ).text());
+			receipt.push($("#option10 option:selected" ).text());
+			receipt.push("Additional Comments:"+$('#add3').val());
+			
+			console.log(receipt);
+			
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				}
+		}            
+    );
+    });
+	
+	$(document).ready(function () {
+	$("#submit8").click(
+		function () {
+			console.log($("#option18 option:selected" ).text());
+			console.log($('#add10').val());
+              
+			receipt.push("Size: "+ $("#option18 option:selected" ).text());
+			receipt.push("Additional Comments: "+$('#add10').val());
+			
+			console.log(receipt);
+			
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				}
+		}            
+    );
+    });
+	
+	$(document).ready(function () {
+	$("#submit5").click(
+		function () {
+			console.log($( "#option11 option:selected" ).text());
+			console.log($( "#option12 option:selected" ).text());
+			console.log($('#add4').val());
+              
+			receipt.push("Spread"+ $( "#option11 option:selected" ).text());
+			receipt.push("Toasted"+ $( "#option12 option:selected" ).text());
+			receipt.push("Additional Comments:"+$('#add4').val());
+			
+			console.log(receipt);
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				}
+		}            
+    );
+    });
+	$(document).ready(function () {
+	$("#submit6").click(
+		function () {
+			console.log($("#option13 option:selected" ).text());
+			console.log($( "#option14 option:selected" ).text());
+			console.log($('#add5').val());
+              
+			receipt.push("Spread: "+ $( "#option13 option:selected" ).text());
+			receipt.push("Toasted: "+ $( "#option14 option:selected" ).text());
+			receipt.push("Additional Comments: "+$('#add5').val());
+			console.log(receipt);
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("<b>"+receipt[i]+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				}
+
+		}            
+    );
+    });
+	$(document).ready(function () {
+	$("#submit7").click(
+		function () {
+			console.log($('#fullname').val());
+			console.log($("#option17 option:selected" ).text());
+			receipt.push("Name:"+$('#fullname').val());
+			receipt.push("Location:"+$( "#option16 option:selected" ).text());
+			console.log(receipt);
+			for(var i=0;i<receipt.length; i++){
+				$('#confirmPage').append("</b>"+receipt[i]+"</b>"+"<br>");
+				$('#receipt').append("<b>"+receipt[i]+"</b>"+"<br>");
+				console.log(receipt[i]);
+				}
+
+		}            
+    );
+    });
+	
+	
+
+	</script>
+	
+    </body>
+</html>
